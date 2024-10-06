@@ -26,14 +26,14 @@ select * from order_details;
 
 use pizzaproject;
 
-## 1. Retrieve the total number of orders placed. 
+## Query 1. Retrieve the total number of orders placed. 
 
 select count(order_ID)  
     as total_orders 
 from orders;
 
 
-## 2 . Calculate the total revenue generated from pizza sales.
+## Query 2 . Calculate the total revenue generated from pizza sales.
 
   select
         round(sum(order_details.quantity * pizzas.price), 2 ) 
